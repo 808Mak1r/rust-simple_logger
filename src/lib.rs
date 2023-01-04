@@ -39,7 +39,8 @@ use time::{format_description::FormatItem, OffsetDateTime, UtcOffset};
 
 #[cfg(feature = "timestamps")]
 const TIMESTAMP_FORMAT_OFFSET: &[FormatItem] = time::macros::format_description!(
-    "[year]-[month]-[day]T[hour]:[minute]:[second].[subsecond digits:3][offset_hour sign:mandatory]:[offset_minute]"
+    "[year]-[month]-[day]T[hour]:[minute]:[second]"
+//     "[year]-[month]-[day]T[hour]:[minute]:[second].[subsecond digits:3][offset_hour sign:mandatory]:[offset_minute]"
 );
 
 #[cfg(feature = "timestamps")]
